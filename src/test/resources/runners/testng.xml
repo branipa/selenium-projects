@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite-Application">
+
+<listeners>
+
+<listener class-name="org.uncommons.reportng.HTMLReporter"/>
+<listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+<listener class-name="com.orgname.base.ExecutionListeners"/>
+
+</listeners>
+
+  <test thread-count="5" name="Regression">
+    <classes>
+      <class name="com.orgname.applicationname.TC001_Application_Launch"/>
+       <class name="com.orgname.applicationname.TC002_AddCustomer"/>
+     
+    </classes>
+  </test> <!-- Regression -->
+</suite> <!-- Suite-Application -->
+
